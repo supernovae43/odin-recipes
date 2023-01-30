@@ -14,8 +14,12 @@ function squareCount() {
         let div = document.createElement('div');
         div.classList.add('square');
         container.appendChild(div);
+        let red = Math.trunc((Math.random() *255) + 1);
+        let green = Math.trunc((Math.random() *255) + 1);
+        let blue = Math.trunc((Math.random() *255) + 1);
+
         div.addEventListener('mouseover', function() {
-         div.style.background = 'red';
+         div.style.background = `rgb(${red}, ${green}, ${blue})`;
      })
      }     
 } 
